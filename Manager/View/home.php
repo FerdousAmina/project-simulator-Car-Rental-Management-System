@@ -8,6 +8,7 @@
     <nav>
         <div>
             <a href="home.php">Home</a>
+            <a href="login.php" class="nav-login">Login</a>
         </div>
     </nav>
 
