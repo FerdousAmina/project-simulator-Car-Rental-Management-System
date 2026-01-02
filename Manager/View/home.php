@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>CAR RENTAL MANAGEMENT</title>
+        <link rel="stylesheet" href="../CSS/loginbar.css">
     </head>
 <body>
     <nav>
