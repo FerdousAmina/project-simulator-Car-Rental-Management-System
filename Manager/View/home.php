@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>CAR RENTAL MANAGEMENT</title>
         <link rel="stylesheet" href="../CSS/loginbar.css">
+        <link rel="stylesheet" href="../CSS/body.css">
     </head>
 <body>
     <nav>
@@ -16,6 +17,7 @@
     <div class="home">
         <h1>Rent Your Dream Car Easily</h1>
         <p>Simple . Fast . Affordable</p>
+        <a href="login.php" class="btn-login">Login</a>
     </div>
 
 </html>
