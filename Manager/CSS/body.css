@@ -2,14 +2,14 @@
    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
    url('../Image/homecar.png');
    
-   height: 90vh;
+   height: 100vh;
    background-size: cover;
    background-position: center;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   color: white;
+   color: yellow;
    text-align:center;
 
 

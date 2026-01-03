@@ -5,6 +5,7 @@
         <title>CAR RENTAL MANAGEMENT</title>
         <link rel="stylesheet" href="../CSS/loginbar.css">
         <link rel="stylesheet" href="../CSS/body.css">
+        <link rel="stylesheet" href="../CSS/nav.css">
     </head>
 <body>
     <nav>
