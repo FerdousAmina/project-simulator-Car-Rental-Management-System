@@ -13,4 +13,9 @@
         </div>
     </nav>
 
+    <div class="home">
+        <h1>Rent Your Dream Car Easily</h1>
+        <p>Simple . Fast . Affordable</p>
+    </div>
+
 </html>
