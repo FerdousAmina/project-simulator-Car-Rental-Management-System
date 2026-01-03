@@ -6,11 +6,13 @@
         <link rel="stylesheet" href="../CSS/loginbar.css">
         <link rel="stylesheet" href="../CSS/body.css">
         <link rel="stylesheet" href="../CSS/nav.css">
+        <link rel="stylesheet" href="../CSS/home.css">
     </head>
 <body>
     <nav>
         <div>
-            <a href="home.php">Home</a>
+            <a href="home.php"class="nav-home">Home</a>
+            &nbsp;<a href="about.php"Class="nav-about">About</a>
             <a href="login.php" class="nav-login">Login</a>
         </div>
     </nav>
