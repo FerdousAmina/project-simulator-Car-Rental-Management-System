@@ -4,4 +4,10 @@ nav{
     rgba(178,31,31,0.8),
     rgba(253,187,45,0.8)
     );
+
+    color:white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -16,9 +16,8 @@
     </nav>
 
     <div class="home">
-        <h1>Rent Your Dream Car Easily</h1>
+        <h1>Rent Your Dream Car Easily</h1><br>
         <p>Simple . Fast . Affordable</p>
-        <a href="login.php" class="btn-login">Login</a>
     </div>
 
 </html>

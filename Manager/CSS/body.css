@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .home {
    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
    url('../Image/homecar.png');
@@ -11,6 +17,17 @@
    align-items: center;
    color: yellow;
    text-align:center;
-
-
+}
+.home h1{
+    font-size: 55px;
+    color:white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.home p {
+    font-size: 30px;
+    color:yellow;
+    margin-bottom: 30px;
+    font-weight: bold;   
 }
