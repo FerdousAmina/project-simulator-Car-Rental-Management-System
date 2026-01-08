@@ -6,7 +6,7 @@
 
 .home {
    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-   url('../Image/homecar.png');
+   url('../Images/homecar.png');
    
    height: 100vh;
    background-size: cover;

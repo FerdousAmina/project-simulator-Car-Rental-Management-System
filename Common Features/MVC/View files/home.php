@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>CAR RENTAL MANAGEMENT</title>
-        <link rel="stylesheet" href="../CSS/loginbar.css">
-        <link rel="stylesheet" href="../CSS/body.css">
-        <link rel="stylesheet" href="../CSS/nav.css">
-        <link rel="stylesheet" href="../CSS/home.css">
+        <link rel="stylesheet" href="../Stylesheets/loginbar.css">
+        <link rel="stylesheet" href="../Stylesheets/body.css">
+        <link rel="stylesheet" href="../Stylesheets/nav.css">
+        <link rel="stylesheet" href="../Stylesheets/home.css">
     </head>
 <body>
     <nav>
