@@ -10,12 +10,33 @@ form{
   background:rgb(241, 153, 70);
   padding:60px;
   border-radius:20px;
-  border:1px solid #333;
+  border:2px solid yellow;
   font-size:20px;
 }
 form h2{
     font-size:30px;
     margin-bottom:20px;
     text-align:center;
-    color:green
+    color:black
+}
+input[type="text"]{
+    padding:10px;
+    font-size:18px;
+    border-radius:15px;
+    border:1px solid red;
+    width: 100%;
+    box-sizing:border-box;
+}
+input[type="submit"]
+{
+    padding:10px;
+    font: size 20px;
+    font-weight:bold;
+    cursor:pointer;
+    background: red;
+    border:none;
+    border-radius:15px;
+    width:100%;
+    color:white
+
 }
