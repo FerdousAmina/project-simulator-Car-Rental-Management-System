@@ -3,5 +3,19 @@ body {
     justify-content:center;
     align-items:center;
     height:100vh;
-    background-color:burlywood
+    background-color:rgb(174, 197, 217);
+    font-family: Arial, sans-serif;
+}
+form{
+  background:rgb(241, 153, 70);
+  padding:60px;
+  border-radius:20px;
+  border:1px solid #333;
+  font-size:20px;
+}
+form h2{
+    font-size:30px;
+    margin-bottom:20px;
+    text-align:center;
+    color:green
 }
