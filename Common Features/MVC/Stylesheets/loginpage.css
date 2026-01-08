@@ -3,14 +3,14 @@ body {
     justify-content:center;
     align-items:center;
     height:100vh;
-    background-color:rgb(174, 197, 217);
+    background-color:whitesmoke;
     font-family: Arial, sans-serif;
 }
 form{
-  background:rgb(241, 153, 70);
+  background:white;
   padding:60px;
   border-radius:20px;
-  border:2px solid yellow;
+  border:2px solid rgb(225, 135, 8)
   font-size:20px;
 }
 form h2{
@@ -23,7 +23,7 @@ input[type="text"]{
     padding:10px;
     font-size:18px;
     border-radius:15px;
-    border:1px solid red;
+    border:1px solid rgb(250, 3, 3);
     width: 100%;
     box-sizing:border-box;
 }
@@ -33,10 +33,14 @@ input[type="submit"]
     font: size 20px;
     font-weight:bold;
     cursor:pointer;
-    background: red;
+    background: rgb(219, 31, 31);
     border:none;
     border-radius:15px;
     width:100%;
     color:white
 
+}
+form p{
+    font-size:18px;
+    margin-top:15px;
 }
