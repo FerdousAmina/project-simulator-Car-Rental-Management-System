@@ -4,6 +4,12 @@ nav{
     rgb(222, 42, 42),
     rgb(220,220,36)
     );
-    padding: 20px 50px;
+    padding: 10px 40px;
     display: flex;
+    align-items: center;
 }
+ nav div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+ }
