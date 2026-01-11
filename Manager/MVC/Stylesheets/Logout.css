@@ -1,0 +1,15 @@
+.Logout
+{
+    background-color:rgb(231, 27, 27);
+    color:white;
+    padding:10px 10px;
+    border-radius:20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    transition:0.3s;
+
+}
