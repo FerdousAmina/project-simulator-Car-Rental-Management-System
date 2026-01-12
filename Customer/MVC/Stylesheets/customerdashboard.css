@@ -5,12 +5,11 @@ body {
 }
 .sidebar{
     background: linear-gradient(180deg,
-    rgb(68, 68, 184),
-    rgb(222, 42, 42),
-    rgb(220,220,36)
+  rgb(68,68,184),
+  rgb(226, 12, 12)
     );
     color:white;
-    width: 200px;
+    width: 250px;
     height:100vh;
     padding:20px;    
 }
