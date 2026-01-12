@@ -1,0 +1,27 @@
+body {
+
+    font-family: Arial,Sans-serif;
+    dislay:flex;
+    margin: 0;
+}
+.sidebar{
+  background: linear-gradient(180deg,
+  rgb(68,68,184),
+  rgb(226, 12, 12)
+  );
+
+  color:white;
+  width: 220px;
+  height: 90vh;
+  padding: 40px;
+}
+.sidebar a{
+    display:block;
+    color:white;
+    padding:15px 0;
+    text-decoration: none;
+    border-bottom:1px solid aquamarine
+}
+.sidebar a:hover{
+    color:forestgreen;
+}
