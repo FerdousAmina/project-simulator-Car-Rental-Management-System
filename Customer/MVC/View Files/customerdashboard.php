@@ -16,5 +16,10 @@
         <a href="emergencydirectory.php">Emergency Helplines</a>
         <a href="logout.php">Logout</a>
     </div>
+    <div class="main-content">
+        <h1>Welcome to Your Dashboard!</h1>
+        <p>Everything you need for your trip is just a click away!</p>
+        <p>Select a feature from the sidebar to get started.</p>
+    </div>
 </body>  
 </html>  
