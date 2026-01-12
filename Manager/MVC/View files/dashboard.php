@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dashboard</title>
+    <title>Manager Dashboard</title>
+    
 </head>
 <body>
-<div>
-    <a href="logout.php"class="logout" onclick="login.php">Logout</a>
+
+<div class="sidebar">
+    <a href="Notice Board Management.php">Notice</a>
+    
 </div>
 </body>
 </html>
