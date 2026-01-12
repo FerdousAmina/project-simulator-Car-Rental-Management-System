@@ -3,8 +3,12 @@ body {
     font-family: Arial,Sans-serif;
     dislay:flex;
     margin: 0;
+    background-image:url('../Images/car1.png');
+    background-size:cover;
+    background-position:center;
 }
 .sidebar{
+  
   background: linear-gradient(180deg,
   rgb(68,68,184),
   rgb(226, 12, 12)
