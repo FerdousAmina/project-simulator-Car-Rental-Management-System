@@ -3,6 +3,7 @@
 <head>
      <meta charset="UTF-8">
     <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="../Stylesheets/customerdashboard.css">
 </head>
 
 <body>
@@ -13,5 +14,7 @@
         <a href="tripnotes.php">My Notes</a>
         <a href="feedback.php">Feedback</a>
         <a href="emergencydirectory.php">Emergency Helplines</a>
+        <a href="logout.php">Logout</a>
     </div>
-</body>    
+</body>  
+</html>  
