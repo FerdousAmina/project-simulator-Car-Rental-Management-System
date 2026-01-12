@@ -1,8 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+}
 .sidebar{
     background: linear-gradient(90deg,
     rgb(68, 68, 184),
     rgb(222, 42, 42),
     rgb(220,220,36)
     );
+    color:white;
+    width: 250px;
+    height:100vh;
+    padding:20px;   
     
 }
