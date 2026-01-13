@@ -40,4 +40,16 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 50px;
 }
+.main-content h1{
+    color:white;
+    font-size:45px;
+    margin-bottom:20px;
+}
+.main-content p{
+    color:white;
+    font-size:22px;
+    font-weight: bold;
+    margin-bottom:20px;
+}  
