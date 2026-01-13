@@ -1,5 +1,5 @@
 body {
-    display : flex ;
+    display: flex ;
     justify-content:center;
     align-items:center;
     height:100vh;
@@ -10,14 +10,14 @@ form{
   background:white;
   padding:40px;
   border-radius:20px;
-  border:2px solid rgb(225, 135, 8)
+  border:2px solid red;
   font-size:20px;
 }
 form h2{
     font-size:30px;
     margin-bottom:20px;
     text-align:center;
-    color:black
+    color:black;
 }
 input[type="text"]{
     padding:10px;
@@ -30,14 +30,14 @@ input[type="text"]{
 input[type="submit"]
 {
     padding:10px;
-    font: size 20px;
+    font-size:20px;
     font-weight:bold;
     cursor:pointer;
     background: rgb(219, 31, 31);
     border:none;
     border-radius:15px;
     width:100%;
-    color:white
+    color:white;
 }
 form p{
     font-size:18px;
