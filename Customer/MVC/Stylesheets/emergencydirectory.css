@@ -37,7 +37,7 @@ body {
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     padding-top: 50px;
@@ -45,7 +45,7 @@ body {
 .main-content h1{
     color:white;
     font-size:45px;
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 .main-content p{
     color:white;
@@ -66,6 +66,27 @@ body {
     backdrop-filter: blur(30px);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.emergency-table th{
+    background: rgb(78, 77, 77);
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+}
+.emergency-table td{
+    padding: 15px;
+    color: #f4f7f9;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.emergency-table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.num{
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 20px;
+
 }
