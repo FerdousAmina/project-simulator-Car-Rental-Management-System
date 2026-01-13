@@ -6,7 +6,6 @@ body {
     background-color:whitesmoke;
     font-family: Arial, sans-serif;
 }
-
 form{
   background:white;
   padding:40px;
@@ -14,14 +13,12 @@ form{
   border:2px solid rgb(225, 135, 8)
   font-size:20px;
 }
-
 form h2{
     font-size:30px;
     margin-bottom:20px;
     text-align:center;
     color:black
 }
-
 input[type="text"]{
     padding:10px;
     font-size:18px;
@@ -30,7 +27,6 @@ input[type="text"]{
     width: 100%;
     box-sizing:border-box;
 }
-
 input[type="submit"]
 {
     padding:10px;
@@ -42,10 +38,20 @@ input[type="submit"]
     border-radius:15px;
     width:100%;
     color:white
-
 }
 form p{
     font-size:18px;
     margin-top:15px;
+    text-align:center;
+}
+#output{
+    margin-top:20px;
+    font-size:16px;
+    color:blue;
+    text-align:center;
+}
+#error{
+    margin-top:10px;
+    color:red;
     text-align:center;
 }
