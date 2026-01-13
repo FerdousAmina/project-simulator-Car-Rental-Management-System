@@ -11,3 +11,16 @@ function handleSubmit(){
     errorDiv.innerHTML = "";
     outputDiv.innerHTML = "";
 }
+    if(fullname === "" || username === "" || email === "" || password === "" || confirm_password === ""){
+        errorDiv.innerHTML = "Please fill in all fields.";
+        return false;
+    }
+    if(password !== confirm_password){
+        errorDiv.innerHTML = "Passwords do not match!";
+        return false;
+    }  
+
+    outputDiv.innerHTML = "Registration Successful!";
+
+    return false;
+   
