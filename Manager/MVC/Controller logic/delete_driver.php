@@ -8,7 +8,7 @@ if (isset($_GET['delete']))
         header("Location: delete_driver.php");
     }
 
-    $drivers = $conn->query("*SELECT * FROM drivers");
+    $drivers = $conn->query("SELECT * FROM drivers");
 
     include "../view files/Drivers Information.php";
 
