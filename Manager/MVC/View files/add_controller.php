@@ -12,7 +12,8 @@
     Age:<input type="number" id="age" name="age"><br><br>
 
     <input type="submit" value="Submit">
+    <a href="Drivers Information.php">Back</a>
 </form>
-
+   <script src="../JavaScript files/validation.js"></script>
 </body>
 </html>
