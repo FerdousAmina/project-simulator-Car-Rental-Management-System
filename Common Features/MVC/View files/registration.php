@@ -21,5 +21,6 @@
 
     <p>Already have an account? <a href="login.php">Log In</a></p>
 </form>
+<script src="../JavaScript Files/regvalidation.js"></script>
 </body>
 </html>

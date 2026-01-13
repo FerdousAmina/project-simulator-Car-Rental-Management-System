@@ -43,12 +43,12 @@ body {
     padding-top: 50px;
 }
 .main-content h1{
-    color:yellow;
+    color: rgb(54, 1, 1);
     font-size:45px;
     margin-bottom:10px;
 }
 .main-content p{
-    color:white;
+    color: rgb(81, 173, 230);
     font-size:22px;
     font-weight: bold;
     margin-bottom:20px;
@@ -78,7 +78,7 @@ body {
 }
 .emergency-table td{
     padding: 15px;
-    color: #f4f7f9;
+    color: black;
     font-size: 22px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
