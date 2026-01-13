@@ -7,14 +7,18 @@
 </head>
 
 <body>
-    <form>
+    <form onsubmit= "return handleSubmit()">
     <h2>Register</h2>
-    Full Name: <input type="text"><br><br>
-    User Name: <input type="text"><br><br>
-    Email Address: <input type="text"><br><br>
-    Password: <input type="text"><br><br>
-    Confirm Password: <input type="text"><br><br>
+    Full Name: <input type="text" id="fullname"><br><br>
+    User Name: <input type="text" id="username"><br><br>
+    Email Address: <input type="text" id="email"><br><br>
+    Password: <input type="text" id="password"><br><br>
+    Confirm Password: <input type="text" id="confirm_password"><br><br>
     <input type="submit" value="Register"><br>
+
+    <div id="error"></div>
+    <div id="output"></div>
+
     <p>Already have an account? <a href="login.php">Log In</a></p>
 </form>
 </body>
