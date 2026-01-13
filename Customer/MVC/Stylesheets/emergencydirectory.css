@@ -52,4 +52,20 @@ body {
     font-size:22px;
     font-weight: bold;
     margin-bottom:20px;
-}  
+}
+.table-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.emergency-table {
+    width: 90%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
