@@ -16,7 +16,7 @@ function validateForm()
             alert("Phone must be 11 digit");
             return false;
         }
-    if (nid.lenght !=10)
+    if (nid.length !=10)
     {
         alert("Nid must be 10 digit");
         return false;
