@@ -14,6 +14,6 @@
     <input type="submit" value="Submit">
     <a href="Drivers Information.php">Back</a>
 </form>
-   <script src="../JavaScript files/validation.js"></script>
+   <script src="../JavaScript files/addvalidation.js"></script>
 </body>
 </html>
