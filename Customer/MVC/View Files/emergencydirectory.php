@@ -20,5 +20,37 @@
         <h1>Emergency Helplines</h1>
         <p>Quick access to essential service numbers for your safety during rides.</p>
     </div>
+    <div class="table-container">
+        <table class="emergency-table">
+            <thead>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Contact Number</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>National Emergency</td>
+                    <td class="num">999</td>
+                    <td>24/7 Service</td>
+                </tr>
+                <tr>
+                    <td>Ambulance Service</td>
+                    <td class="num">10666</td>
+                    <td>Emergency Only</td>
+                </tr>
+                <tr>
+                    <td>Fire Service</td>
+                    <td class="num">102</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Police (Control Room)</td>
+                    <td class="num">9575500</td>
+                    <td>24/7 Service</td>
+                </tr>
+            </tbody>
+        </table>
 </body>  
 </html> 
