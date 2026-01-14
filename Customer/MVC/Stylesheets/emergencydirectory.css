@@ -91,3 +91,39 @@ body {
     font-size: 20px;
 
 }
+.form-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.form-section input{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.form-section button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #00D4FF;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.form-section button:hover{
+    background: #008fb3;
+}
+.emergency-table a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.emergency-table a:hover{
+    color: #ffd700;
+}
