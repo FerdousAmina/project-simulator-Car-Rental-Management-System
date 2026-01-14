@@ -33,7 +33,7 @@ include('../Controller logic/emergencycontroller.php');
 
             <?php if ($editData): ?>
                 <button type="submit" name="update">Update</button>
-                <a ref ="emergencydirectory.php"><button type="button">Cancel</button></a>
+                <a href ="emergencydirectory.php"><button type="button">Cancel</button></a>
             <?php else: ?>
                 <button type="submit" name="add">Add</button>
             <?php endif; ?>
