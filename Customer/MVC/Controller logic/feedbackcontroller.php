@@ -5,8 +5,8 @@ $success = $error = "";
 $editData = null;
 
 if (isset($_POST['add'])){
-    $title = $_POST['about'];
-    $content = $_POST['feedback'];
+    $about = $_POST['about'];
+    $feedback = $_POST['feedback'];
 
     $sql = "INSERT INTO feedback_information (about, feedback)
             VALUES ('$about', '$feedback')";
@@ -23,10 +23,10 @@ if(isset($_GET['delete'])){
 }
 if (isset($_POST['update'])){
     $id = $_POST['id'];
-    $title = $_POST['about'];
-    $content = $_POST['feedback'];
+    $about = $_POST['about'];
+    $feedback = $_POST['feedback'];
 
-    $sql = "UPDATE feedback_information SET about='$title', feedback='$content' WHERE id=$id";
+    $sql = "UPDATE feedback_information SET about='$about', feedback='$feedback' WHERE id=$id";
 
     if (mysqli_query($conn, $sql)) {
         $success = "Updated successfully!";
