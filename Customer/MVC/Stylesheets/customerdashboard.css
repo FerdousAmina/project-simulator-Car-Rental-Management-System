@@ -37,7 +37,18 @@ body {
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
+}
+.main-content h1{
+    color: yellow;
+    font-size:65px;
+    margin-bottom:10px;
+}
+.main-content p{
+    color: white;
+    font-size:24px;
+    font-weight: bold;
+    margin-bottom:12px;
 }
