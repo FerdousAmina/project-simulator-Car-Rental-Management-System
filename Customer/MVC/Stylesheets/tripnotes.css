@@ -41,7 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: stretch;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -51,10 +51,117 @@ body {
     color: rgb(54, 1, 1);
     font-size:45px;
     margin-bottom:10px;
+    text-align: center;
 }
 .main-content p{
-    color: rgb(81, 173, 230);
+    color: rgb(6, 139, 222);
     font-size:22px;
     font-weight: bold;
     margin-bottom:20px;
+    text-align: center;
 }
+.note-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    gap: 15px;
+}
+.note-box {
+    flex: 1;
+    margin:0;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);   
+    overflow: hidden;
+}
+.note-header {
+    background: rgb(78, 77, 77);
+    padding: 7px;
+}
+.note-header h3 {
+    color: white;
+    margin: 0;
+    font-size: 22px;
+}
+.note-body {
+    padding: 10px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    flex-grow: 1;
+}
+.note-footer {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.note-footer a{
+    display: inline-block;
+    color: white;
+    padding: 8px 16px;
+    background: #00D4FF;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.note-footer a:hover{
+    background: #008fb3;
+    color: white;
+
+}
+.form-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.form-section input{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.form-section button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #00D4FF;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+.form-section button:hover{
+    background: #008fb3;
+}
+.btn-cancel{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #777;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13.3px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.btn-cancel:hover{
+    background: #555;
+    color: white;
+}
+
