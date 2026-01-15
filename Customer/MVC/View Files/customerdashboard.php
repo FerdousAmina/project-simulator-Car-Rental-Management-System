@@ -4,6 +4,7 @@
      <meta charset="UTF-8">
     <title>Customer Dashboard</title>
     <link rel="stylesheet" href="../Stylesheets/customerdashboard.css">
+    <link rel="stylesheet" href="../Stylesheets/common.css">
 </head>
 
 <body>

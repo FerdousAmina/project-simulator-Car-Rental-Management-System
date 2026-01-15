@@ -8,6 +8,7 @@ include('../Controller logic/notescontroller.php');
      <meta charset="UTF-8">
     <title>My Notes</title>
     <link rel="stylesheet" href="../Stylesheets/tripnotes.css">
+    <link rel="stylesheet" href="../Stylesheets/common.css">
     <link rel="stylesheet" href="../Stylesheets/back.css">
 </head>
 <body>

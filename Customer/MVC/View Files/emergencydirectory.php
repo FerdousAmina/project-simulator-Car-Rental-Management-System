@@ -8,6 +8,7 @@ include('../Controller logic/emergencycontroller.php');
      <meta charset="UTF-8">
     <title>Emergency Directory</title>
     <link rel="stylesheet" href="../Stylesheets/emergencydirectory.css">
+    <link rel="stylesheet" href="../Stylesheets/common.css">
     <link rel="stylesheet" href="../Stylesheets/back.css">
 </head>
 <body>
