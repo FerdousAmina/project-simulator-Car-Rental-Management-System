@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "My_Notes";
+$db = "my_notes";
 $conn = mysqli_connect($host, $user, $pass, $db);
 
 if ($conn->connect_error) {
