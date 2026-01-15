@@ -60,80 +60,42 @@ body {
     margin-bottom:20px;
     text-align: center;
 }
-.note-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: 20px auto;
-    gap: 15px;
-}
-.note-box {
-    flex: 1;
-    margin:0;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(20px);
-    border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);   
-    overflow: hidden;
-}
-.note-header {
-    background: rgb(78, 77, 77);
-    padding: 7px;
-}
-.note-header h3 {
-    color: white;
-    margin: 0;
-    font-size: 22px;
-}
-.note-body {
-    padding: 10px;
-    color: #333;
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: left;
-    flex-grow: 1;
-}
-.note-footer {
-    background: rgba(0, 0, 0, 0.05);
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 15px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-}
-.note-footer a{
-    display: inline-block;
-    color: white;
-    padding: 8px 16px;
-    background: #00D4FF;
-    border-radius: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
-}
-.note-footer a:hover{
-    background: #008fb3;
-    color: white;
-
-}
 .form-section {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+    width: 90%;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.form-section input{
+.form-section form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.form-inputs-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.form-section-p{
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+.form-section input, .form-section textarea{
+    width: 100%;
     padding: 10px;
-    margin: 5px;
-    border: none;
+    margin: 5px 0;
+    border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
+    box-sizing: border-box;
 }
 .form-section button{
     padding: 10px 20px;
@@ -163,5 +125,64 @@ body {
 .btn-cancel:hover{
     background: #555;
     color: white;
+}
+
+.note-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    gap: 15px;
+}
+.note-box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);   
+    overflow: hidden;
+}
+.note-header {
+    background: rgb(78, 77, 77);
+    padding: 7px;
+}
+.note-header h3 {
+    color: white;
+    margin: 0;
+    font-size: 22px;
+}
+.note-body {
+    padding: 10px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+.note-footer {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 15px;
+}
+.note-footer a{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    background: #00D4FF;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    text-align: center;
+}
+.note-footer a:hover{
+    background: #008fb3;
+    color: white;
+
 }
 
