@@ -8,10 +8,11 @@ include('../Controller logic/notescontroller.php');
      <meta charset="UTF-8">
     <title>My Notes</title>
     <link rel="stylesheet" href="../Stylesheets/tripnotes.css">
+    <link rel="stylesheet" href="../Stylesheets/back.css">
 </head>
 <body>
     <div class="sidebar">
-        <a href="back.php">Back</a>
+        <a href="customerdashboard.php" class="back-btn">Back</a>
         <h2>Features</h2>
         <a href="places.php">Nearby Places to Visit</a>
         <a href="calculator.php">Cost Calculator</a>    
