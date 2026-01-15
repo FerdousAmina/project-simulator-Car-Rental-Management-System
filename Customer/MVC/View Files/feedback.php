@@ -29,10 +29,10 @@ include('../Controller logic/feedbackcontroller.php');
         <div class = "form-section">
             <form method="POST" action="feedback.php">
                 <input type="hidden" name="id" value="<?php echo $editData['id'] ?? ''; ?>">
-                <p><strong>Title:</strong></p>
-
-                <input type="text" name="title" value="<?php echo $editData['about'] ?? ''; ?>" required>
                 <p><strong>About:</strong></p>
+
+                <input type="text" name="about" value="<?php echo $editData['about'] ?? ''; ?>" required>
+                <p><strong>Feedback:</strong></p>
 
                 <textarea name="feedback" required><?php echo $editData['feedback'] ?? ''; ?></textarea>
 
@@ -48,7 +48,7 @@ include('../Controller logic/feedbackcontroller.php');
         </div>
 
         <?php
-        $result = mysqli_query($conn, "SELECT * FROM feedback ORDER BY id DESC");
+        $result = mysqli_query($conn, "SELECT * FROM feedback_information ORDER BY id DESC");
         while ($row = mysqli_fetch_assoc($result)){
         ?>
         <div class="note-container">
