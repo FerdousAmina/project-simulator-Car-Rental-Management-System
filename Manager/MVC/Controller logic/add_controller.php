@@ -8,10 +8,10 @@ if($_SERVER["REQUEST_METHOD"]== "POST")
         $nid = $_POST['nid'];
         $age = $_POST['age'];
 
-        $conn->query ("INSERT INTO drivers (name,phone,nid,age) VALUES('$name','$phone','$nid','$age')");
+        $conn->query ("INSERT INTO driver (name,phone,nid,age) VALUES('$name','$phone','$nid','$age')");
 
-        header("Location: add_controller.php");
+        header("Location:../View files/Drivers Information.php");
         exit();
     }
-    include "../view files/Drivers Information.php";
+    
 ?>
