@@ -26,8 +26,12 @@ include('../Controller logic/notescontroller.php');
         <div class = "form-section">
             <form method="POST" action="">
                 <input type="hidden" name="id" value="<?php echo $editData['id'] ?? ''; ?>">
-                <input type="text" name="title" placeholder="Note Title" value="<?php echo $editData['title'] ?? ''; ?>" required>
-                <textarea name="content" placeholder="Write your note here..." required><?php echo $editData['content'] ?? ''; ?></textarea>
+                <p><strong>Title:</strong></p>
+
+                <input type="text" name="title" value="<?php echo $editData['title'] ?? ''; ?>" required>
+                <p><strong>Note:</strong></p>
+
+                <textarea name="content" required><?php echo $editData['content'] ?? ''; ?></textarea>
 
                 <?php if ($editData): ?>
                     <button type="submit" name="update">Update</button>
@@ -46,10 +50,11 @@ include('../Controller logic/notescontroller.php');
         ?>
         <div class="note-box">
             <div class="note-header">
-                <h3><?php echo $row['title']; ?></h3>
+                <h3>Title: <?php echo htmlspecialchars($row['title']); ?></h3>
             </div>
             <div class="note-body">
-                <p><?php echo $row['content']; ?></p>
+                <p>Note: <br> 
+                <?php echo nl2br(htmlspecialchars($row['content'])); ?></p>
             </div>
             <div class="note-footer">
                 <a href="?edit=<?php echo $row['id']; ?>">Edit</a>
