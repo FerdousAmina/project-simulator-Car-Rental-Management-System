@@ -11,6 +11,7 @@ include('../Controller logic/notescontroller.php');
 </head>
 <body>
     <div class="sidebar">
+        <a href="back.php">Back</a>
         <h2>Features</h2>
         <a href="places.php">Nearby Places to Visit</a>
         <a href="calculator.php">Cost Calculator</a>    

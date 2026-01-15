@@ -8,9 +8,11 @@ include('../Controller logic/emergencycontroller.php');
      <meta charset="UTF-8">
     <title>Emergency Directory</title>
     <link rel="stylesheet" href="../Stylesheets/emergencydirectory.css">
+    <link rel="stylesheet" href="../Stylesheets/back.css">
 </head>
 <body>
     <div class="sidebar">
+        <a href="customerdashboard.php" class="back-btn">Back</a>
         <h2>Features</h2>
         <a href="places.php">Nearby Places to Visit</a>
         <a href="calculator.php">Cost Calculator</a>    
