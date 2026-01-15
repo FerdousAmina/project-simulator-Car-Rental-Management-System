@@ -1,0 +1,101 @@
+body{
+   font-family: 'Segoe UI';
+   background-image:url('../Images/dcar2.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.main-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    color: yellow;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px); 
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.input-group label{
+    display: block;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+input[type="text"], 
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    color: red;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    box-shadow: 0 0 10px red;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+input[type="submit"] {
+    background-color: greenyellow;
+    color: blue;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 100px;
+}
+input[type="submit"]:hover {
+    background-color: skyblue;
+}
+.cancel-btn {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 0px;
+}
+
+.cancel-btn:hover {
+    background-color: skyblue;
+}
