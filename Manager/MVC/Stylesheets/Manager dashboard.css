@@ -6,6 +6,8 @@ body {
     background-image:url('../Images/car1.png');
     background-size:cover;
     background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .sidebar{
   
