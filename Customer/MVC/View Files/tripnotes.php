@@ -54,7 +54,7 @@ include('../Controller logic/notescontroller.php');
                 <h3>Title: <?php echo htmlspecialchars($row['title']); ?></h3>
             </div>
             <div class="note-body">
-                <p>Note: <br> 
+                <p>Note:  
                 <?php echo nl2br(htmlspecialchars($row['content'])); ?></p>
             </div>
             </div>
