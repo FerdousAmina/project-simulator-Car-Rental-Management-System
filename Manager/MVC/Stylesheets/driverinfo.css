@@ -1,0 +1,27 @@
+body{
+    font-family: 'Segoe UI';
+    background-color: rgb(74, 135, 186);
+    margin:0;
+    padding: 20px;
+}
+
+h2{
+    text-align:center;
+    font:bold;
+    color:yellow;
+    margin-top: 10px;
+}
+
+.back-link{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.back-link button{
+    background-color:red;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+}
