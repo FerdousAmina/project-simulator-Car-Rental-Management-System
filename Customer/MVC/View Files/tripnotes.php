@@ -24,7 +24,7 @@ include('../Controller logic/notescontroller.php');
         <p>Keep track of your travel plans and important information with personal notes.</p>
 
         <div class = "form-section">
-            <form method="POST" action="">
+            <form method="POST" action="tripnotes.php">
                 <input type="hidden" name="id" value="<?php echo $editData['id'] ?? ''; ?>">
                 <p><strong>Title:</strong></p>
 
@@ -35,7 +35,7 @@ include('../Controller logic/notescontroller.php');
 
                 <?php if ($editData): ?>
                     <button type="submit" name="update">Update</button>
-                    <a href="tripnotes.php"><button type="button">Cancel</button></a>
+                    <a href="tripnotes.php" class="btn-cancel">Cancel</a>
                 <?php else: ?>
                     <button type="submit" name="add">Add</button>
                 <?php endif; ?>
@@ -48,13 +48,15 @@ include('../Controller logic/notescontroller.php');
         $result = mysqli_query($conn, "SELECT * FROM trip_notes ORDER BY id DESC");
         while ($row = mysqli_fetch_assoc($result)){
         ?>
+        <div class="note-container">
         <div class="note-box">
             <div class="note-header">
                 <h3>Title: <?php echo htmlspecialchars($row['title']); ?></h3>
             </div>
             <div class="note-body">
-                <p>Note: <br> 
+                <p>Note:  
                 <?php echo nl2br(htmlspecialchars($row['content'])); ?></p>
+            </div>
             </div>
             <div class="note-footer">
                 <a href="?edit=<?php echo $row['id']; ?>">Edit</a>
