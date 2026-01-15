@@ -19,7 +19,7 @@ if (isset($_POST['add'])){
 if(isset($_GET['delete'])){
     $id = $_GET['delete'];
     mysqli_query($conn, "DELETE FROM trip_notes WHERE id=$id");
-    header("Location: ../View Files/mynotes.php");
+    header("Location: ../View Files/tripnotes.php");
 }
 if (isset($_POST['update'])){
     $id = $_POST['id'];
