@@ -1,0 +1,95 @@
+body {
+    background-color: plum;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.fuel-card {
+    background: antiquewhite;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-top: 8px solid orangered;
+}
+
+.fuel-card:hover {
+    transform: translateY(-3px);
+}
+
+.fuel-card h3 {
+    text-align: center;
+    font-size:25px;
+    color: red;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: orangered;
+}
+
+#submitBtn {
+    background: brown;
+    color: yellow;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(48, 255, 7, 0.3);
+    transition: all 0.3s ease;
+}
+
+#submitBtn:hover {
+    background:lightslategray;
+    box-shadow: 0 6px 20px rgba(255, 193, 7, 0.4);
+}
+
+.result-box {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: palegreen;
+    border-radius: 12px;
+    border: 3px solid yellow;
+    text-align: center;
+    display: none;
+    
+}
+
+#totalCost {
+    display: block;
+    font-size: 1.4em;
+    color: black;
+    margin-bottom: 5px;
+}
+
+#fuelNeeded {
+    color: blue;
+    margin: 0;
+    font-size: 0.9em;
+}
+
