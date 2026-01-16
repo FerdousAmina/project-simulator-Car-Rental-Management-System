@@ -57,6 +57,7 @@
     align-items: center;
 }
 .form-section input, .form-section textarea{
+    background: rgba(243, 233, 154, 0.85);
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -105,14 +106,14 @@
 }
 .note-box {
     flex: 1;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(243, 233, 154, 0.85);
     backdrop-filter: blur(20px);
     border-radius: 15px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);   
     overflow: hidden;
 }
 .note-header {
-    background: rgb(78, 77, 77);
+    background: rgb(110, 110, 110);
     padding: 7px;
 }
 .note-header h3 {
