@@ -15,7 +15,7 @@ include('../Controller logic/emergencycontroller.php');
     <div class="sidebar">
         <a href="customerdashboard.php" class="back-btn">Back</a>
         <h2>Features</h2>
-        <a href="places.php">Nearby Places to Visit</a>
+        <a href="places.php">Nearby Tourist Places</a>
         <a href="calculator.php">Cost Calculator</a>    
         <a href="tripnotes.php">My Notes</a>
         <a href="feedback.php">Feedback</a>

@@ -15,10 +15,41 @@ include('../Controller logic/placescontroller.php');
     <div class="sidebar">
         <a href="customerdashboard.php" class="back-btn">Back</a>
         <h2>Features</h2>
-        <a href="places.php">Nearby Places to Visit</a>
+        <a href="places.php">Nearby Tourist Places</a>
         <a href="calculator.php">Cost Calculator</a>    
         <a href="tripnotes.php">My Notes</a>
         <a href="feedback.php">Feedback</a>
         <a href="emergencydirectory.php">Emergency Helplines</a>
         <a href="logout.php">Logout</a>
     </div>
+    <div class="main-content">
+        <h1>Nearby Tourist Places</h1>
+        <p>Select a destination from the list below to discover amazing nearby tourist spots.</p>
+
+        <div class="places-list">
+            <div class="place-box">
+                <label for="placeSelect"><strong>Choose a Place:</strong></label><br><br>
+                <select id="placeSelect" onchange="showPlaceDetails()">
+                    <option value="">--Select a Location--</option>
+
+                    <?php foreach ($places_data as $index => $place):?>
+                        <option value="<?php echo $index; ?>">
+                            <?php echo htmlspecialchars($place['place_name']); ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            
+            <div id= "detailsBox">
+                <img id="displayImg" src="" alt="Place Image">
+                <h2 id="displayName"></h2>
+                <p id="displayDesc"></p>
+                <a id="displayMapLink" href="" target="_blank">View on Google Map</a>
+            </div>
+            </div>
+            <script>
+                const places = <?php echo json_encode($places_data); ?>;
+            </script>
+            <script src="../Javascript/places.js"></script>    
+            </body>
+            </html>
