@@ -1,0 +1,130 @@
+
+body {
+    font-family: 'Segoe UI';
+    background-color: gray;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #eb23cd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.header-section h2 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.btn-primary {
+    background-color: #36c51c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+}
+
+
+.car-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+
+.car-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.car-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.car-info h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.car-info p {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.update-btn {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.update-btn:hover {
+    text-decoration: underline;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    background: #cc0000;
+}
+
+@media (max-width: 600px) {
+    .header-section {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
