@@ -26,8 +26,10 @@
         <p id="fuelNeeded"></p>
     </div>
 </div>
+
 <script>
-function calculateFuel() {
+function calculateFuel() 
+{
     var km = document.getElementById("kmInput").value;
     var type = document.getElementById("fuelType").value;
     if (km <= 0) {
@@ -44,6 +46,17 @@ function calculateFuel() {
     
     xhttp.open("GET", "../Controller logic/FuelController.php", true);
     xhttp.send();
+    function displayResult(responseText, km, type)
+ {
+    var data = JSON.parse(responseText);
+    
+    var liters = (km / data.Mileage_Avg).toFixed(2);
+    var total = (liters * data[type]).toFixed(2);
+
+    document.getElementById("fuelResult").style.display = "block";
+    document.getElementById("totalCost").innerHTML = "Estimated Cost: " + total + " BDT";
+    document.getElementById("fuelNeeded").innerHTML = "Fuel Needed: " + liters + " Liters";
+}
 }
 </script>
 </body>
