@@ -1,0 +1,77 @@
+.notice-body {
+    background-color: wheat;
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+.notice-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+.main-title {
+    color: rgb(21, 21, 139);
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    border-bottom: 3px solid rgb(7, 120, 164);
+    display: inline-block;
+}
+
+.notice-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+.notice-card-container {
+    width: 400px;
+    background: ;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.notice-card-container:hover {
+    transform: translateY(-10px);
+}
+
+.card-header-bar {
+    background-color: skyblue;
+    padding: 12px;
+    color: orangered;
+    text-align: center;
+}
+
+.card-header-bar h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-content-area {
+    padding: 25px;
+    text-align: center;
+    background: white;
+}
+
+.notice-text {
+    color: rgb(137, 2, 2);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card-footer-date {
+    border-top: 1px solid white;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.card-footer-date span {
+    color: blue;
+    font-size: 13px;
+    font-style: italic;
+}
