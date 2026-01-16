@@ -1,0 +1,15 @@
+nav{
+    background: linear-gradient(90deg,
+    rgb(68, 68, 184),
+    rgb(222, 42, 42),
+    rgb(220,220,36)
+    );
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+}
+ nav div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+ }

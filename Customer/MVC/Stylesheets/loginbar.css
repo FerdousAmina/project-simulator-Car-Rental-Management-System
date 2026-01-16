@@ -1,0 +1,10 @@
+.nav-login{
+    margin-left:auto;
+    background:rgb(221, 28, 28);
+    padding:10px 15px;
+    border-radius: 15px;
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+}
