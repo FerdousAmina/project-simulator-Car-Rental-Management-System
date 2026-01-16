@@ -26,3 +26,38 @@
         <p id="fuelNeeded"></p>
     </div>
 </div>
+
+<script>
+function calculateFuel() 
+{
+    var km = document.getElementById("kmInput").value;
+    var type = document.getElementById("fuelType").value;
+    if (km <= 0) {
+        document.getElementById("fuelResult").style.display = "none";
+        return;
+    }
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+
+            displayResult(this.responseText, km, type);
+        }
+    };
+    
+    xhttp.open("GET", "../Controller logic/FuelController.php", true);
+    xhttp.send();
+    function displayResult(responseText, km, type)
+ {
+    var data = JSON.parse(responseText);
+    
+    var liters = (km / data.Mileage_Avg).toFixed(2);
+    var total = (liters * data[type]).toFixed(2);
+
+    document.getElementById("fuelResult").style.display = "block";
+    document.getElementById("totalCost").innerHTML = "Estimated Cost: " + total + " BDT";
+    document.getElementById("fuelNeeded").innerHTML = "Fuel Needed: " + liters + " Liters";
+}
+}
+</script>
+</body>
+<html>
