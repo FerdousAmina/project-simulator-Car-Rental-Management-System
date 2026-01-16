@@ -26,3 +26,25 @@
         <p id="fuelNeeded"></p>
     </div>
 </div>
+<script>
+function calculateFuel() {
+    var km = document.getElementById("kmInput").value;
+    var type = document.getElementById("fuelType").value;
+    if (km <= 0) {
+        document.getElementById("fuelResult").style.display = "none";
+        return;
+    }
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+
+            displayResult(this.responseText, km, type);
+        }
+    };
+    
+    xhttp.open("GET", "../Controller logic/FuelController.php", true);
+    xhttp.send();
+}
+</script>
+</body>
+<html>
