@@ -8,7 +8,7 @@ function showDistrict() {
     if (selectedDistrict !== "" && places[selectedDistrict]) {
         const districtPlaces = places[selectedDistrict];
 
-        districtPlaces.forEach(place => {
+        Object.values(districtPlaces).forEach(place => {
             const placeHTML = `<div class="place-card">
             <img src="${place.image_path}" alt="${place.place_name}">
                 <h2>${place.place_name}</h2>

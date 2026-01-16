@@ -28,7 +28,6 @@ include('../Controller logic/placescontroller.php');
 
         <div class="places-list">
             <div class="place-box">
-                <label for="districtSelect"><strong>Choose a District!</strong></label><br><br>
                 <select id="districtSelect" onchange="showDistrict()">
                     <option value=""> Select a District </option>
 
@@ -51,6 +50,6 @@ include('../Controller logic/placescontroller.php');
             <script>
                 const places = <?php echo json_encode($places_data); ?>;
             </script>
-            <script src="../Javascript/places.js"></script>    
+            <script src="../JavaScript Files/places.js"></script>    
             </body>
             </html>
