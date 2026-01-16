@@ -34,5 +34,33 @@ $records = getAllRecords($conn);
     </div>
     </div>
     </div>
+ <script>
+    function logAttendance() {
+        var name = document.getElementById("staffName").value;
+        var inTime = document.getElementById("checkIn").value;
+        var outTime = document.getElementById("checkOut").value;
+
+        if(name === "" || inTime === "") {
+            alert("Please fill name and check-in time!");
+            return;
+        }
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                if (this.responseText.trim() === "success") {
+                    location.reload(); 
+                } else {
+                    alert("Error: " + this.responseText);
+                }
+            }
+        };
+
+        xhttp.open("POST", "../Controller/StaffController.php", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("action=save&name=" + name + "&inTime=" + inTime + "&outTime=" + outTime);
+    }
+    </script>
+
 </body>
 </html>
