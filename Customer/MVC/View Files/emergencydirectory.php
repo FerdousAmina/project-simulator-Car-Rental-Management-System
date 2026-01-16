@@ -57,7 +57,8 @@ include('../Controller logic/emergencycontroller.php');
             <tbody>
 
                 <?php
-                $result = mysqli_query($conn, "SELECT * FROM emergency_contacts");
+                $current_user = $_SESSION['username'];
+                $result = mysqli_query($conn, "SELECT * FROM emergency_contacts WHERE username='$current_user'");
                 while ($row = mysqli_fetch_assoc($result)) {
                 ?>
                 <tr>

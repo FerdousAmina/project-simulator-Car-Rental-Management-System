@@ -48,7 +48,8 @@ include('../Controller logic/feedbackcontroller.php');
         </div>
 
         <?php
-        $result = mysqli_query($conn, "SELECT * FROM feedback_information ORDER BY id DESC");
+        $current_user = $_SESSION['username'];
+        $result = mysqli_query($conn, "SELECT * FROM feedback_information WHERE username='$current_user' ORDER BY id DESC");
         while ($row = mysqli_fetch_assoc($result)){
         ?>
         <div class="note-container">

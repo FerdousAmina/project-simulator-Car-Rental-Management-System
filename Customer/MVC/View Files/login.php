@@ -18,7 +18,6 @@ if(!empty($_SESSION['login_error'])){
     <h2>Login</h2>
     User Name: <input type="text" name="username" id="username"><br><br>
     Password: <input type="text" name="password" id="password"><br><br>
-    <input type="checkbox" name="remember">Remember me <br><br>
     <input type ="submit" name="login" value="Login">
 
     <div id="error"></div>
