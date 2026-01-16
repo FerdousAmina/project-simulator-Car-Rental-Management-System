@@ -1,3 +1,12 @@
+<?php
+session_start();
+$error = "";
+if(!empty($_SESSION['login_error'])){
+    $error = $_SESSION['login_error'];
+    unset($_SESSION['login_error']);
+}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,7 +22,11 @@
     <input type ="submit" name="login" value="Login">
 
     <div id="error"></div>
-    <div id="output"></div>
+    <?php if(!empty($error)): ?>
+        <div id="output">
+            <?php echo $error; ?>
+    </div>
+    <?php endif; ?>
 
     <p>Not registred? <a href="registration.php">Register Here</a></p>
     </form>

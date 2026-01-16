@@ -23,6 +23,9 @@ if (isset($_POST['register'])){
 
             if (mysqli_query($conn, $sql)) {
                 $success = "Registered successfully!";
+
+                header("Location: ../View Files/login.php");
+                exit();
             } else {
                 $error = mysqli_error($conn);
             }

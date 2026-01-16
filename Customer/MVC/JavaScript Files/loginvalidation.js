@@ -6,7 +6,9 @@ function handleSubmit(){
     var outputDiv = document.getElementById("output");
 
     errorDiv.innerHTML = "";
-    outputDiv.innerHTML = "";
+    if(outputDiv){
+        outputDiv.innerHTML = "";
+    }
 
     if(username === "" || password === ""){
         errorDiv.innerHTML = "Please fill in all fields.";
