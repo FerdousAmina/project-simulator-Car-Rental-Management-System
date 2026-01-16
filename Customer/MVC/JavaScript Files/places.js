@@ -15,6 +15,8 @@ function showPlaceDetails() {
         displayDesc.innerText = data.description;
         displayImg.src = data.image_path;
         displayMapLink.href = data.location_url;
+
+        detailsBox.classList.remove('hidden');
 }
 else {
     detailsBox.classList.add('hidden');

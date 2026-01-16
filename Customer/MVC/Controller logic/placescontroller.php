@@ -12,8 +12,8 @@ if ($result) {
     while ($row = mysqli_fetch_assoc($result)) {
         $places_data[] = $row;
     }
+}
     else {
     $error = "Failed to fetch data: " . mysqli_error($conn);
     }
-}
 ?>    

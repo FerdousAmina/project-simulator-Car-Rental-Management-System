@@ -39,8 +39,8 @@ include('../Controller logic/placescontroller.php');
                     <?php endforeach; ?>
                 </select>
             </div>
-            
-            <div id= "detailsBox">
+
+            <div id= "detailsBox" class="hidden">
                 <img id="displayImg" src="" alt="Place Image">
                 <h2 id="displayName"></h2>
                 <p id="displayDesc"></p>
