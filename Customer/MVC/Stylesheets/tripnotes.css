@@ -1,6 +1,6 @@
 .main-content{
     flex:1;
-    background-image: url('../Images/A.jpg');              
+    background-image: url('../Images/trip.jpg');              
     height:100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@
     align-items: center;
 }
 .form-section input, .form-section textarea{
-    background: rgba(243, 233, 154, 0.85);
+    background: rgba(255, 203, 134, 0.866);
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -78,7 +78,7 @@
     transition: 0.3s;
 }
 .form-section button:hover{
-    background: #008fb3;
+    background: orangered;
 }
 .btn-cancel{
     padding: 10px 20px;
@@ -106,7 +106,7 @@
 }
 .note-box {
     flex: 1;
-    background: rgba(243, 233, 154, 0.85);
+    background: rgba(254, 216, 165, 0.866);
     backdrop-filter: blur(20px);
     border-radius: 15px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);   
