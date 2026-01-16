@@ -1,6 +1,6 @@
 .main-content{
     flex:1;
-    background-image: url('../Images/note.jpg');              
+    background-image: url('../Images/A.jpg');              
     height:100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,13 +16,13 @@
     overflow-y: auto;
 }
 .main-content h1{
-    color: rgb(54, 1, 1);
+    color: red;
     font-size:45px;
     margin-bottom:10px;
     text-align: center;
 }
 .main-content p{
-    color: rgb(6, 139, 222);
+    color: rgb(163, 3, 163);
     font-size:22px;
     font-weight: bold;
     margin-bottom:20px;
@@ -69,7 +69,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background: #00D4FF;
+    background: orange;
     color: white;
     cursor: pointer;
     font-weight: bold;
@@ -140,7 +140,7 @@
     display: block;
     color: white;
     padding: 8px 16px;
-    background: #00D4FF;
+    background: orange;
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
@@ -149,7 +149,7 @@
     text-align: center;
 }
 .note-footer a:hover{
-    background: #008fb3;
+    background: orangered;
     color: white;
 
 }
