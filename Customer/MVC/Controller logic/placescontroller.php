@@ -2,15 +2,15 @@
 include('../Database/myplaces.php');
 
 $success = $error = "";
-$editData = null;
+$places_data = [];
 
-$query = "SELECT * FROM nearby_places ORDER BY place_name ASC";
+$query = "SELECT * FROM nearby_places ORDER BY district ASC";
 $result = mysqli_query($conn, $query);
 
-$places_data = [];
+
 if ($result) {
     while ($row = mysqli_fetch_assoc($result)) {
-        $places_data[] = $row;
+        $places_data[$row['district']][]= $row;
     }
 }
     else {

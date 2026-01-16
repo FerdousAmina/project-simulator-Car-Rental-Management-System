@@ -1,24 +1,21 @@
-function showPlaceDetails() {
-    const select = document.getElementById('placeSelect');
-    const detailsBox = document.getElementById('detailsBox');
-    const displayImg = document.getElementById('displayImg');
-    const displayName = document.getElementById('displayName');
-    const displayDesc = document.getElementById('displayDesc');
-    const displayMapLink = document.getElementById('displayMapLink');
+function showDistrict() {
+    const select = document.getElementById('districtSelect');
+    const container = document.getElementById('placesContainer');
+    const selectedDistrict = select.value;
 
-    const selectedIndex = select.value;
+    container.innerHTML = ""; 
+    
+    if (selectedDistrict !== "" && places[selectedDistrict]) {
+        const districtPlaces = places[selectedDistrict];
 
-    if (selectedIndex !== "") {
-        const data = places[selectedIndex];
-        
-        displayName.innerText = data.place_name;
-        displayDesc.innerText = data.description;
-        displayImg.src = data.image_path;
-        displayMapLink.href = data.location_url;
-
-        detailsBox.classList.remove('hidden');
-}
-else {
-    detailsBox.classList.add('hidden');
-}
+        districtPlaces.forEach(place => {
+            const placeHTML = `<div class="place-card">
+            <img src="${place.image_path}" alt="${place.place_name}">
+                <h2>${place.place_name}</h2>
+                <p>${place.description}</p>
+                <a href="${place.location_url}" target="_blank">View on Google Map</a>
+            </div>`;
+            container.innerHTML += placeHTML;
+        });
+    }
 }

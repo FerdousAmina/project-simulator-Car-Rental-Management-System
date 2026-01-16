@@ -28,16 +28,17 @@ include('../Controller logic/placescontroller.php');
 
         <div class="places-list">
             <div class="place-box">
-                <label for="placeSelect"><strong>Choose a Place:</strong></label><br><br>
-                <select id="placeSelect" onchange="showPlaceDetails()">
-                    <option value="">--Select a Location--</option>
+                <label for="districtSelect"><strong>Choose a District!</strong></label><br><br>
+                <select id="districtSelect" onchange="showDistrict()">
+                    <option value=""> Select a District </option>
 
-                    <?php foreach ($places_data as $index => $place):?>
-                        <option value="<?php echo $index; ?>">
-                            <?php echo htmlspecialchars($place['place_name']); ?>
+                    <?php foreach (array_keys($places_data) as $district):?>
+                        <option value="<?php echo htmlspecialchars($district); ?>">
+                            <?php echo htmlspecialchars($district); ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
+                <div id="placesContainer"></div>
             </div>
 
             <div id= "detailsBox" class="hidden">
