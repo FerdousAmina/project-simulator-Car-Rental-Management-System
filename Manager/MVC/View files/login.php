@@ -13,7 +13,7 @@
 
     <div id="error" style="color:red;">
     
-    <php if (isset($_GET['error'])) echo htmlspecialchars($_GET['error']); ?>
+    <?php if (isset($_GET['error'])) echo htmlspecialchars($_GET['error']); ?>
     
     </div>
 
@@ -21,7 +21,6 @@
 
     <p>Not registred? <a href="registration.php">Register Here</a></p>
     </form>
-    <script src="../JavaScript Files/loginvalidation.js"></script>
 </body>
 <html>
 
