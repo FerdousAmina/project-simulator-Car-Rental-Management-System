@@ -1,0 +1,17 @@
+.main-content{
+    flex:1;
+    background-image: url('../Images/Expense.jpg');              
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow-y: auto;
+}
