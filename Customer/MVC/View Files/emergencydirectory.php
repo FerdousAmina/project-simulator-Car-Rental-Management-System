@@ -16,7 +16,7 @@ include('../Controller logic/emergencycontroller.php');
         <a href="customerdashboard.php" class="back-btn">Back</a>
         <h2>Features</h2>
         <a href="places.php">Nearby Tourist Places</a>
-        <a href="calculator.php">Cost Calculator</a>    
+        <a href="expense.php">Travel Expense Logger</a>     
         <a href="tripnotes.php">My Notes</a>
         <a href="feedback.php">Feedback</a>
         <a href="emergencydirectory.php">Emergency Helplines</a>

@@ -6,7 +6,7 @@ include('../Controller logic/feedbackcontroller.php');
 <html lang="en">
 <head>
      <meta charset="UTF-8">
-    <title>Feedback</title>
+    <title>My Feedback</title>
     <link rel="stylesheet" href="../Stylesheets/feedback.css">
     <link rel="stylesheet" href="../Stylesheets/common.css">
     <link rel="stylesheet" href="../Stylesheets/back.css">
@@ -16,7 +16,7 @@ include('../Controller logic/feedbackcontroller.php');
         <a href="customerdashboard.php" class="back-btn">Back</a>
         <h2>Features</h2>
         <a href="places.php">Nearby Tourist Places</a>
-        <a href="calculator.php">Cost Calculator</a>    
+        <a href="expense.php">Travel Expense Logger</a>     
         <a href="tripnotes.php">My Notes</a>
         <a href="feedback.php">Feedback</a>
         <a href="emergencydirectory.php">Emergency Helplines</a>
