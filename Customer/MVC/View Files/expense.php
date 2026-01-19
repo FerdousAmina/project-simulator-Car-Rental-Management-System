@@ -54,4 +54,23 @@ include('../Controller logic/expensecontroller.php');
                 </tr>
             </thead>
             <tbody>
+
+                <?php
+                $total_expense = 0;
+                $current_user = $_SESSION['username'];
+                $result = mysqli_query($conn, "SELECT * FROM expenses WHERE username='$current_user'");
+                while ($row = mysqli_fetch_assoc($result)) {
+                    $total_expense += $row['cost']; 
+                ?>
+                <tr>
+                    <td><?php echo $row['title']; ?></td>
+                    <td class="num"><?php echo $row['cost']; ?></td>
+                    <td>
+                        <a href="?edit=<?php echo $row['id']; ?>">Edit</a> |
+                        <a href="?delete=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure to delete this contact?');">Delete</a>
+                    </td>
+                </tr>
+                <?php 
+                } 
+                ?>
            
