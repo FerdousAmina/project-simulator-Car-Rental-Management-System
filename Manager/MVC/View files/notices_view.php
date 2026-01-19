@@ -8,15 +8,11 @@
     <link rel="stylesheet" href="../Stylesheets/notice_display.css">
 </head>
 <body class="notice-body">
-<nav>
-    <div class="nav-container">
-        <a href="Project page.php">Home</a>
-         <a href="notices_view.php" class="active">Notices</a>
-    </div>
-    </nav>
+
     <div class="notice-wrapper">
-        <h1 class="main-title">All Official Notices</h1>
+    <h1 class="main-title">All Official Notices</h1>
     <div class="notice-grid">
+    
     <?php
         $all_notices = getAllNotices();
         if ($all_notices && $all_notices->num_rows > 0) {
