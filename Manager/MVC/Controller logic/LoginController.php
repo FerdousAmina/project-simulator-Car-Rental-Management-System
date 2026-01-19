@@ -9,7 +9,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST["username"];
     $pass =$_POST["password"];
 
- if ($user == "tahabi" && $pass="12345")
+
+if (empty($user) || empty($pass)) 
+    {
+        header("Location: ../View files/login.php?error=" . urlencode("Fields cannot be empty!"));
+        exit();
+    }
+
+ if ($user == "tahabi" && $pass=="12345")
     {
         $_SESSION["username"] =$user;
         $_SESSION["role"]="Manager";
