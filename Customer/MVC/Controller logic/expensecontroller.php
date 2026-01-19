@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../Database/expense_logger.php');
+include('../Database/myexpenses.php');
 
 $success = $error = "";
 $current_user = $_SESSION['username'];
