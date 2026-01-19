@@ -31,7 +31,8 @@ if (isset($_POST['update'])){
     $sql = "UPDATE expenses SET title='$title', cost='$cost' WHERE id=$id AND username='$current_user'";
 
     if (mysqli_query($conn, $sql)) {
-        $success = "Updated successfully!";
+        header("Location: ../View Files/expense.php?updated=1");
+        exit();
     } else {
         $error = mysqli_error($conn);
     }
