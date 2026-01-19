@@ -22,3 +22,36 @@ include('../Controller logic/expensecontroller.php');
         <a href="emergencydirectory.php">Emergency Helplines</a>
         <a href="logout.php">Logout</a>
     </div>
+
+    <div class="main-content">
+        <h1>Travel Expense Logger</h1>
+        <p>Keep track of all your ride expenses easily.</p>
+
+    <div class="form-section">
+        <form method="post" action="">
+            <input type="hidden" name="id" value="<?php echo $editData['id'] ?? ''; ?>">
+
+            <input type="text" name="title" placeholder="Expense Title" value="<?php echo $editData['title'] ?? ''; ?>" required>
+            <input type="number" name="cost" placeholder="Cost" value="<?php echo $editData['cost'] ?? ''; ?>"
+            onkeypress="return event.charCode >=48 && event charCode <= 57" required>
+
+            <?php if ($editData): ?>
+                <button type="submit" name="update">Update</button>
+                <a href ="expense.php"><button type="button">Cancel</button></a>
+            <?php else: ?>
+                <button type="submit" name="add">Add</button>
+            <?php endif; ?>
+        </form>
+    </div>
+
+    <div class="table-container">
+        <table class="cost-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Cost</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+           
