@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="../Stylesheets/loginbar.css">
         <link rel="stylesheet" href="../Stylesheets/body.css">
         <link rel="stylesheet" href="../Stylesheets/nav.css">
-        <link rel="stylesheet" href="../Stylesheets/home.css">
+        <link rel="stylesheet" href="../Stylesheets/notice.css">
     </head>
 <body>
     <nav>
         <div>
             <a href="home.php"class="nav-home">Home</a>
-            <a href="notices_view.php"class="nav-about">Notices</a>
+            <a href="notices_view.php"class="nav-notice">Notice</a>
             <a href="login.php" class="nav-login">Login</a>
         </div>
     </nav>
