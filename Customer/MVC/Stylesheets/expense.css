@@ -52,6 +52,7 @@
     padding: 15px;
     color: black;
     font-size: 22px;
+    font-weight: bold;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .cost-table tr:hover {
@@ -68,6 +69,7 @@
 }
 .total-row{
     font-size: 22px;
+    font-weight: bold;
     color: e67e22;
     border-top: 2px solid rgb(78, 77, 77);
     padding: 20px;

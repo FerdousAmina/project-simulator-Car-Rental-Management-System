@@ -36,22 +36,23 @@
     width: 90%;
     min-height: 400px;
     border-collapse: collapse;
-    background: rgb(194, 180, 255);
+    background: rgb(247, 178, 151);
     border-radius: 15px;
     overflow: auto;
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .emergency-table th{
-    background: rgb(78, 77, 77);
+    background: rgb(128, 1, 1);
     color: white;
     padding: 15px;
     font-size: 25px;
 }
 .emergency-table td{
     padding: 15px;
-    color: black;
+    color: RED;
     font-size: 22px;
+    font-weight: bold;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .emergency-table tr:hover {
@@ -82,8 +83,8 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background: rgb(194, 180, 255);
-    color: black;
+    background: rgb(128, 1, 1);
+    color: white;
     cursor: pointer;
     font-weight: bold;
 }
@@ -91,7 +92,7 @@
     background: #008fb3;
 }
 .emergency-table a{
-    color: black;
+    color: red;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
