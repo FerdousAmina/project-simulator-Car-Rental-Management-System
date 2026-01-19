@@ -2,13 +2,14 @@
 <html>
 <head>
     <title>Add New Car</title>
-    <link rel="stylesheet" href="../Stylesheets/add_cars.css">
+    <link rel="stylesheet" href="../Stylesheets/addcars.css">
 </head>
 <body>
     <div class="form-container">
         <h2>Insert New Car Details</h2>
         <form id="addCarForm" enctype="multipart/form-data">
-            <div class="input-group">
+            
+        <div class="input-group">
                 <label>Car Model:</label>
                 <input type="text" name="model" required>
 
