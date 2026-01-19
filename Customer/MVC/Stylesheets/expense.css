@@ -1,6 +1,6 @@
 .main-content{
     flex:1;
-    background-image: url('../Images/Expense.jpg');              
+    background-image: url('../Images/Hand.jpg');              
     height:100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,7 +11,18 @@
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
     overflow-y: auto;
+}
+.main-content h1{
+    color: blue;
+    font-size:45px;
+    margin-bottom:10px;
+}
+.main-content p{
+    color: rgb(163, 3, 163);
+    font-size:24px;
+    font-weight: bold;
+    margin-bottom:20px;
 }
