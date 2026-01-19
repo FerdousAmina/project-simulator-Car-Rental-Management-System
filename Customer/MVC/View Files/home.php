@@ -7,13 +7,11 @@
         <link rel="stylesheet" href="../Stylesheets/body.css">
         <link rel="stylesheet" href="../Stylesheets/nav.css">
         <link rel="stylesheet" href="../Stylesheets/home.css">
-        <link rel="stylesheet" href="../Stylesheets/about.css">
     </head>
 <body>
     <nav>
         <div>
             <a href="home.php"class="nav-home">Home</a>
-            &nbsp;<a href="about.php"Class="nav-about" onclick="alert('This is a Car Rental Management System develop by Tahabi and Amina');return false;">About</a>
             <a href="login.php" class="nav-login">Login</a>
         </div>
     </nav>
