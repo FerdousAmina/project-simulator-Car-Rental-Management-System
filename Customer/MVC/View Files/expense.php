@@ -73,4 +73,16 @@ include('../Controller logic/expensecontroller.php');
                 <?php 
                 } 
                 ?>
+
+                <tr class="total-row">
+                    <td>Total Expense</td>
+                    <td colspan="2"><?php echo number_format($total_expense);?></td>
+            </tr>
+            </tbody>
+        </table>       
+    </div>
+            </div>
+     </body>
+</html>
+
            
